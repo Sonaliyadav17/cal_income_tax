@@ -1,0 +1,203 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('bg.png') no-repeat center center fixed; /* Replace with your image URL */
+    background-size: cover; /* Cover the entire screen */
+    color: #333; /* Dark gray text for better readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the content to the top and footer to the bottom */
+    min-height: 100vh;
+}
+
+/* Main container styling */
+.container {
+    position: absolute; /* Use absolute positioning */
+    top: 40px; /* Adjust this value to move the box down */
+    left: 40px; /* Adjust this value to move the box from the left */
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 140%;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(10, 10, 0, 0.1); /* Subtle shadow for a modern touch */
+    text-align: center;
+    font-size: 16px;
+    margin: 20px auto;
+}
+
+/* Disclaimer Styling */
+.disclaimer {
+    font-size: 14px;
+    color: hsl(184, 23%, 15%);
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+.footer {
+    font-size: 14px;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 20;
+    /*margin-bottom: 2px;*/
+}
+
+/* Header styles */
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: hsl(209, 40%, 25%); /* Deep blue for professional tone */
+    margin-bottom: 20px;
+}
+/* Main title font (Income Tax Calculator) */
+.main-title {
+    font-family: 'Merriweather', serif; /* Serif font for a more traditional look */
+    font-size: 36px;
+    font-weight: 700; /* Bold for prominence */
+    color: #2c3e50; /* Deep blue for professional tone */
+    text-transform: uppercase;
+}
+
+/* Subtitle font (FY 2025-26) */
+.sub-title {
+    font-family: 'Roboto', sans-serif; /* Sans-serif font for a modern feel */
+    font-size: 22px;
+    font-weight: 400;
+    color: #2980b9; /* Professional blue for subtitle */
+    text-transform: capitalize; /* Keeping it neat */
+}
+
+/* Input group container */
+.input-group {
+    margin-bottom: 30px;
+    text-align: left;
+    display: block;
+}
+
+/* enter your income */
+.input-group label {
+    font-size: 16px;
+    color: rgb(81, 98, 123); 
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Input field styling */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #bdc3c7; /* Light gray border */
+    border-radius: 8px;
+    background-color: #ecf0f1; /* Light background to contrast with text */
+    color: #2c3e50; /* Dark text color */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state of input fields */
+.input-group input:focus {
+    border-color: #3498db; /* Subtle blue border when focused */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Blue shadow on focus */
+    outline: none;
+}
+
+/* Submit button styles */
+.submit-button button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db; /* Professional blue background */
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.submit-button button:active {
+    background-color: #1c5980; /* Darker blue on click */
+}
+
+/* Result section */
+.result {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.result h3 {
+    font-size: 20px;
+    color: #3498db; /* Consistent blue color for result heading */
+}
+
+.result p {
+    font-size: 23px;
+    color: hsl(228, 40%, 40%); /* Soft gray for description */
+}
+
+/* Decorative elements (subtle circles) */
+.container::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(52, 152, 219, 0.15); /* Light blue circle */
+    border-radius: 50%;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(52, 152, 219, 0.1); /* Lighter blue circle */
+    border-radius: 50%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .input-group input,
+    .submit-button button {
+        font-size: 14px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+}
+
+
+
+/* image 1: 
+https://files.oaiusercontent.com/file-NkoJGytYoWXYGQiauyo1st?se=2025-02-01T10%3A41%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D69551d1f-d329-4a24-b8c9-e970c6c5094a.webp&sig=W1r6kuPwO7aFrNAjXVoyfXrlyKQXmywDD2zKHkgJvuI%3D
+
+image 2:
+https://files.oaiusercontent.com/file-7iA3GMAJPpazNvYXUJuLwN?se=2025-02-01T10%3A40%3A15Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D74f96bbd-7eea-4638-8ac0-1a79e0475238.webp&sig=15cR%2BmlVul%2B0jNO4W9Llt26XoOmw2k/3ELGMT43QM9s%3D
+*/
