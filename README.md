@@ -1,7 +1,8 @@
 # 💰 cal_income_tax – Income Tax Calculator (FY 2025–26)
 A responsive, web-based tool to help individuals in India estimate their income tax liability for the Financial Year 2025–26 using a progressive tax slab system.
 
-🔗 Live Demo:[](https://sonaliyadav17.github.io/cal_income_tax/)
+🔗 Live at 
+https://sonaliyadav17.github.io/cal_income_tax/
 
 📌 Overview
 The Income Tax Calculator is a lightweight, front-end application built with HTML, CSS, and JavaScript. It runs entirely in the browser — no logins, no ads, no data collection — just fast and accurate slab-wise tax estimation.
